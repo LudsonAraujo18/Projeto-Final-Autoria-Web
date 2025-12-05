@@ -1,0 +1,67 @@
+/* Global Styles */
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    /* Deep Dark Background */
+    color: #e0e0e0;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #121212;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Material Overrides */
+.mat-mdc-card {
+    background-color: #1e1e1e !important;
+    /* Surface Color */
+    color: #e0e0e0 !important;
+}
+
+.mat-mdc-form-field-label {
+    color: #b0b0b0 !important;
+}
+
+.mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__leading,
+.mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__notch,
+.mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__trailing {
+    border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.mdc-text-field--focused .mdc-notched-outline__leading,
+.mdc-text-field--focused .mdc-notched-outline__notch,
+.mdc-text-field--focused .mdc-notched-outline__trailing {
+    border-color: #bb86fc !important;
+    /* Primary Accent */
+}
+
+.mdc-text-field__input {
+    color: #fff !important;
+}
+
+.mat-mdc-select-value {
+    color: #fff !important;
+}
+
+.mat-mdc-select-arrow {
+    color: #b0b0b0 !important;
+}
