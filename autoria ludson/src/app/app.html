@@ -1,0 +1,20 @@
+<mat-toolbar color="primary" class="app-toolbar">
+  <button mat-icon-button class="menu-icon">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span routerLink="/" class="logo">
+    <mat-icon class="logo-icon">sports_esports</mat-icon>
+    GameStore
+  </span>
+  <span class="spacer"></span>
+  <button mat-button routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">
+    <mat-icon>videogame_asset</mat-icon> Jogos
+  </button>
+  <button mat-button routerLink="/create" routerLinkActive="active-link">
+    <mat-icon>add_circle</mat-icon> Novo Jogo
+  </button>
+</mat-toolbar>
+
+<div class="content">
+  <router-outlet></router-outlet>
+</div>
